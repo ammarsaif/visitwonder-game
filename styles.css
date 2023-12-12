@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f3; /* Light blue-gray background */
+}
+
+/* Fonts */
+h2 {
+    margin: 16px 8px;
+    color: #333; /* Dark gray font color */
+}
+
+p {
+    font-size: 1rem;
+    color: #555; /* Slightly darker gray font color */
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px; /* max-width for better display on larger screens */
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background-color: #5bbad5;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+/* Data Display */
+.data-display-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    height: auto;
+}
+
+/* Data */
+.data {
+    height: 80px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Destinations */
+.destinations-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 5px 0;
+    height: auto;
+}
+
+/* Destination */
+.destination {
+    min-height: 2rem;
+    width: auto;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: #78c679;
+    display: flex;
+    align-items: center;
+    padding: 3px 6px;
+}
+
+.destination p {
+    color: white;
+}
+
+/* Map Container */
+#map {
+    width: 100%;
+    height: 48vh;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Logo */
+.logo a {
+    color: #333;
+    text-decoration: none;
+    font-size: 28px; /* Increased font size for better visibility */
+    font-weight: bold;
+}
+
+/* Play Game Button */
+.btn-play_game {
+    background-color: #78c679;
+    color: #fff;
+    padding: 20px 40px; /* Increased padding for better spacing */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px; /* Increased font size for better visibility */
+}
+
+/* Score */
+.score {
+    font-size: 16px; /* Increased font size for better visibility */
+    color: #333;
+    margin-right: 20px;
+}
