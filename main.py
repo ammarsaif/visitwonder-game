@@ -128,15 +128,16 @@ def run_game(player_email, difficulty, game_win_threshold):
             print("You lost the game the game!")
             exit()
 
-
+# Default values
 default_location = "Helsinki"
 default_location_coordinates = '60.3172, 24.963301'
 start_location = default_location_coordinates
 user_location = default_location
 current_location = None
 player_name = None
-
 num_visited_destinations = 0
+
+# Game difficulty
 difficulty_easy = 10000
 difficulty_medium = 12000
 difficulty_hard = 16000
@@ -359,7 +360,7 @@ time.sleep(1)
 print("Welcome to Game - 'Visit Wonders'. \n"
       "In order to win this game, you must visit seven wonders of the world. \n"
       "You can choose from wonders by selecting number of keyboard and pressing enter. \n"
-      "You will win the game if you visit seven wonders of your choice by spending co2 emission under the limit given. ")
+      "In order to win the game you must visit wonders of your choice given under the chosen difficulty level by spending co2 emission under the limit allocated.. ")
 
 time.sleep(1)
 

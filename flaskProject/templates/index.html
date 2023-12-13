@@ -24,16 +24,38 @@
             </div>
         </div>
 
+<!-- Player data Form -->
+        <div class="player-data--container">
+            <form id="player-form" method="post" action="{{ url_for('start_game') }}" onsubmit="clearForm()">
+                <div class="input-div">
+                    <p>Name</p>
+                    <label>
+                        <input type="text" name="player_name">
+                    </label>
+                </div>
+                <div class="input-div">
+                    <p>Email</p>
+                    <label>
+                        <input type="email" name="player_email">
+                    </label>
+                </div>
+                <div class="btn-data--div">
+                    <button type="submit" class="btn-green btn-submit">Play Game</button>
+                    <button type="button" class="btn-red btn-cancel" onclick="window.location.href='{{ url_for('home') }}'">No Thanks</button>
+                </div>
+            </form>
+        </div>
+
 <!-- Game Data Container -->
          <h2>Game Data</h2>
         <div class="data-display-container">
             <div class="data">
                 <h4>Target</h4>
-                <p>Visit seven destination</p>
+                <p>Visit <span class="num-target-wonders">7</span> wonders</p>
             </div>
             <div class="data">
                 <h4>Destinations Visited</h4>
-                <p>Two destinations</p>
+                <p>You have visited <span class="num-visited-wonders">2</span> wonders</p>
             </div>
             <div class="data">
                 <h4>CO2 budget</h4>
