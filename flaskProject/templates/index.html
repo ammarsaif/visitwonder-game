@@ -10,7 +10,7 @@
      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
@@ -19,13 +19,11 @@
             <div class="logo">
                 <a href="#" class="logo">Visit Wonder</a>
             </div>
-            <div>
-                <button class="btn-play_game">Play Again</button>
-            </div>
             <div class="user-name">
-                <p>User Name</p>
+                <p>Player Name</p>
             </div>
         </div>
+
 <!-- Game Data Container -->
          <h2>Game Data</h2>
         <div class="data-display-container">
@@ -107,6 +105,9 @@
                 <p>The Mezquita of Cordoba</p>
             </div>
         </div>
+        <div class="play-again--container">
+            <button class="btn btn-green">Play Again</button>
+        </div>
 <!-- Map Container -->
 
         <div id="map">
@@ -114,6 +115,6 @@
         </div>
 
     </div>
-    <script src="script.js"></script>
+    <script src="../static/script.js"></script>
 </body>
 </html>
