@@ -5,4 +5,3 @@ This game is developed in python. This the project for the studies of Bachelors 
 we are applying the fundamentals of python, MariaDB, JavaScript, HTML, CSS to develop the game.
 # Developers
 Ammar Saif
-Rabin Shrestha
